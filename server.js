@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const sgMail = require('@sendgrid/mail');
 
+const PORT = process.env.PORT || 8080;
+
 
 const app = express();
 
@@ -52,6 +54,6 @@ app.post('/thanks', (req, res) => {
 });
 
 
-app.listen(8080, () => {
-    console.log('Server is listening at localhost:8080')
+app.listen(PORT, () => {
+    console.log('Server is listening at localhost:' + PORT)
 });
