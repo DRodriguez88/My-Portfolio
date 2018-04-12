@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8080;
 
 const app = express();
 
-const SENDGRID_API_KEY = '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';
+
 
 app.use(morgan('dev'));
 app.use(bodyParser.json());
